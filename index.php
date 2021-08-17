@@ -1,15 +1,17 @@
 
 <?php
 include('Friend.php');
+include('BestFriend.php');
 
 
 $friend1 = new Friend('Jack', '17');
 $friend2 = new Friend('Reg', '74');
+$friend3 = new BestFriend('Ivan', '26');
 
-echo $friend1->age;
-echo $friend2->name;
+echo $friend1->getName();
 
-print_r($friend1);
+echo $friend3->getName();
+
 ?>
 
 
