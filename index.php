@@ -1,9 +1,15 @@
-<?php
 
+<?php
 include('Friend.php');
 
-$friend1 = new Friend();
-$friend2 = new Friend();
+
+$friend1 = new Friend('Jack', '17');
+$friend2 = new Friend('Reg', '74');
+
+echo $friend1->age;
+echo $friend2->name;
+
+print_r($friend1);
 ?>
 
 
