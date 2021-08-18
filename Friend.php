@@ -6,6 +6,8 @@ class Friend {
     private $name;
     private $age;
     
+    public $role = "friend";
+    
     //constructors
 
     public function __construct($name, $age) {
