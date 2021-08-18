@@ -5,6 +5,8 @@ class Friend {
 
     protected $name;
     protected $age;
+
+    public static $amountOfFriends = 0;
     
     public $role = "friend";
     
@@ -13,6 +15,7 @@ class Friend {
     public function __construct($name, $age) {
         $this->name =  $name;
         $this->age = $age;
+        Friend::$amountOfFriends += 1;
 
     }
 
@@ -27,6 +30,10 @@ class Friend {
 
     public function message() {
         return $this->name . " is my friend and " . $this->age . " years old";
+    }
+
+    public static function allFriends(){
+        return "I currently have " . self::$amountOfFriends .  " friends.";
     }
 
     //Getters and Setters

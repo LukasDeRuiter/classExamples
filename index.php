@@ -10,6 +10,9 @@ $friend3 = new BestFriend('Ivan', '26', '1999');
 
 $friend4 = clone($friend1);
 
+
+echo Friend::allFriends() . "<br>";
+
 echo $friend1->getName() . "<br>";
 
 echo $friend3->getName() . "<br>";
