@@ -3,8 +3,8 @@ class Friend {
 
     //properties
 
-    private $name;
-    private $age;
+    protected $name;
+    protected $age;
     
     public $role = "friend";
     
@@ -14,6 +14,11 @@ class Friend {
         $this->name =  $name;
         $this->age = $age;
 
+    }
+
+    //Methods
+    public function message() {
+        return $this->name . " is my friend and " . $this->age . " years old";
     }
 
     //Getters and Setters
