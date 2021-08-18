@@ -17,6 +17,14 @@ class Friend {
     }
 
     //Methods
+    public function __destruct(){
+        echo $this->name . " has been removed <br>";
+    }
+
+    public function __clone() {
+        $this->name = "Clone " . $this->name;
+    }
+
     public function message() {
         return $this->name . " is my friend and " . $this->age . " years old";
     }
